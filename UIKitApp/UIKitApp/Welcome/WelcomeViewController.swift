@@ -43,7 +43,9 @@ extension WelcomeViewController: WelcomeViewDelegate {
     }
     
     func showSignUp() {
-        let signUpViewController = SignUpViewController.getViewController()
-        show(signUpViewController, sender: nil)
+//        let signUpViewController = SignUpViewController.getViewController()
+//        show(signUpViewController, sender: nil)
+        let obj = SignUpViewController.loadViewLogin()
+               show(obj, sender: nil)
     }
 }
