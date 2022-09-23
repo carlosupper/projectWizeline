@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C3F83B228DDFF9400161142 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F83B028DDFF9400161142 /* MenuViewController.swift */; };
+		0C3F83B328DDFF9400161142 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C3F83B128DDFF9400161142 /* MenuViewController.xib */; };
+		0C3F83B628DE051600161142 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F83B428DE051600161142 /* MenuCell.swift */; };
+		0C3F83B728DE051600161142 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C3F83B528DE051600161142 /* MenuCell.xib */; };
 		1CAE369E28D2672C008E10A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE369D28D2672C008E10A3 /* AppDelegate.swift */; };
 		1CAE36A028D2672C008E10A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE369F28D2672C008E10A3 /* SceneDelegate.swift */; };
 		1CAE36A728D26732008E10A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE36A628D26732008E10A3 /* Assets.xcassets */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C3F83B028DDFF9400161142 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0C3F83B128DDFF9400161142 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		0C3F83B428DE051600161142 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		0C3F83B528DE051600161142 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		1CAE369A28D2672C008E10A3 /* UIKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAE369D28D2672C008E10A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CAE369F28D2672C008E10A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +108,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C3F83AE28DDFF4B00161142 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0C3F83AF28DDFF6900161142 /* View */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0C3F83AF28DDFF6900161142 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C3F83B028DDFF9400161142 /* MenuViewController.swift */,
+				0C3F83B128DDFF9400161142 /* MenuViewController.xib */,
+				0C3F83B428DE051600161142 /* MenuCell.swift */,
+				0C3F83B528DE051600161142 /* MenuCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1CAE369128D2672C008E10A3 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +213,7 @@
 		1CAE36DC28D36F80008E10A3 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				0C3F83AE28DDFF4B00161142 /* Menu */,
 				1CAE36DD28D36F8E008E10A3 /* Helpers */,
 				1CAE36DE28D36FE6008E10A3 /* SignInView.swift */,
 			);
@@ -315,8 +343,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3F83B728DE051600161142 /* MenuCell.xib in Resources */,
 				1CAE36E728D37190008E10A3 /* Localizable.strings in Resources */,
 				1CAE36AA28D26732008E10A3 /* LaunchScreen.storyboard in Resources */,
+				0C3F83B328DDFF9400161142 /* MenuViewController.xib in Resources */,
 				1CAE36A728D26732008E10A3 /* Assets.xcassets in Resources */,
 				1CAE36DB28D2F6C2008E10A3 /* SignUp.storyboard in Resources */,
 			);
@@ -344,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */,
+				0C3F83B228DDFF9400161142 /* MenuViewController.swift in Sources */,
 				1CAE36DF28D36FE6008E10A3 /* SignInView.swift in Sources */,
 				1CAE36E128D3700D008E10A3 /* SignInConstants.swift in Sources */,
 				1CAE3B5228D37F0D008E10A3 /* CustomColor.swift in Sources */,
@@ -356,6 +387,7 @@
 				1CAE369E28D2672C008E10A3 /* AppDelegate.swift in Sources */,
 				1CAE36D728D2F60B008E10A3 /* Constants.swift in Sources */,
 				1CAE36D428D2F5E3008E10A3 /* WelcomeViewDelegate.swift in Sources */,
+				0C3F83B628DE051600161142 /* MenuCell.swift in Sources */,
 				1CAE36A028D2672C008E10A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

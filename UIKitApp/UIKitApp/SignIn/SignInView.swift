@@ -36,12 +36,25 @@ struct SignInView: View {
             Spacer()
             
             VStack(spacing: SignInConstants.buttonSpacing) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                    print("Primero")
+                    /*
+                    let vc = UIHostingController(rootView: LoginView())
+                    vc.modalPresentationStyle = .fullScreen
+                    vc.modalTransitionStyle = .crossDissolve
+                    self.present(vc, animated: true)
+                    */
+                   
+                    
+                }) {
                     Text(LocalizableKeys.SignIn.signInButtonTitle)
                 }
                 .buttonStyle(SignInButtonStyle())
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                    print("Segundo")
+                    
+                }) {
                     Text(LocalizableKeys.SignIn.registerQuestionButtonTitle)
                         .font(.system(size: SignInConstants.contentTextSize)) +
                     Text(LocalizableKeys.SignIn.registerButtonTitle)
@@ -54,6 +67,8 @@ struct SignInView: View {
             
         }.padding(.all, SignInConstants.marginPadding)
     }
+    
+    
 }
 
 

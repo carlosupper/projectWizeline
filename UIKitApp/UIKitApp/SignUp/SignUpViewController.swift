@@ -33,4 +33,9 @@ extension SignUpViewController {
         }
         return signUpViewController
     }
+    
+    static func loadViewLogin() -> MenuViewController {
+        let vc = MenuViewController.init(nibName: "MenuViewController", bundle: nil)
+        return vc
+    }
 }
