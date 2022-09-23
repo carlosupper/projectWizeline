@@ -15,8 +15,13 @@ final class SignUpViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func didTapSignUp(_ sender: Any) {
-        let homeView =  self.storyboard?.instantiateViewController(withIdentifier: "welcomevc") as! WelcomeViewController
-        self.present(homeView, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "NewWelcome", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "newwelcome")
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+        
+        
+        
     }
     
     @IBAction func didTapSignIn(_ sender: Any) {

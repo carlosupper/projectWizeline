@@ -32,6 +32,8 @@
 		1CAE3B5228D37F0D008E10A3 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5128D37F0D008E10A3 /* CustomColor.swift */; };
 		1CAE3B5428D37F25008E10A3 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5328D37F25008E10A3 /* PrimaryButton.swift */; };
 		1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */; };
+		7A668E5728DDFFFB00AECCA5 /* NewWelcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A668E5628DDFFFB00AECCA5 /* NewWelcome.storyboard */; };
+		7A668E5928DE029A00AECCA5 /* NewWelcomeContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A668E5828DE029A00AECCA5 /* NewWelcomeContoller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		1CAE3B5128D37F0D008E10A3 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		1CAE3B5328D37F25008E10A3 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		7A668E5628DDFFFB00AECCA5 /* NewWelcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewWelcome.storyboard; sourceTree = "<group>"; };
+		7A668E5828DE029A00AECCA5 /* NewWelcomeContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWelcomeContoller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 		1CAE369C28D2672C008E10A3 /* UIKitApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A668E5528DDFFD900AECCA5 /* NewWelcome */,
 				1CAE369D28D2672C008E10A3 /* AppDelegate.swift */,
 				1CAE369F28D2672C008E10A3 /* SceneDelegate.swift */,
 				1CAE36E528D370B1008E10A3 /* Resources */,
@@ -237,6 +242,15 @@
 				1CAE36E828D371BC008E10A3 /* LocalizableKeys.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7A668E5528DDFFD900AECCA5 /* NewWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				7A668E5628DDFFFB00AECCA5 /* NewWelcome.storyboard */,
+				7A668E5828DE029A00AECCA5 /* NewWelcomeContoller.swift */,
+			);
+			path = NewWelcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +363,7 @@
 				0C3F83B328DDFF9400161142 /* MenuViewController.xib in Resources */,
 				1CAE36A728D26732008E10A3 /* Assets.xcassets in Resources */,
 				1CAE36DB28D2F6C2008E10A3 /* SignUp.storyboard in Resources */,
+				7A668E5728DDFFFB00AECCA5 /* NewWelcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A668E5928DE029A00AECCA5 /* NewWelcomeContoller.swift in Sources */,
 				1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */,
 				0C3F83B228DDFF9400161142 /* MenuViewController.swift in Sources */,
 				1CAE36DF28D36FE6008E10A3 /* SignInView.swift in Sources */,
